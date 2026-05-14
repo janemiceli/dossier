@@ -1,0 +1,38 @@
+[
+  {
+    "id": "devopsdays-seattle",
+    "title": "DevOpsDays Seattle \u2014 Speaker",
+    "organization": "DevOpsDays Seattle",
+    "topics": [
+      "SRE",
+      "Reliability culture",
+      "Operational excellence"
+    ],
+    "summary": "Speaking engagement focused on practical reliability, DevOps culture, and operational excellence.",
+    "links": []
+  },
+  {
+    "id": "defcon-cloud-village",
+    "title": "DEF CON \u2014 Cloud Village \u2014 Speaker",
+    "organization": "DEF CON / Cloud Village",
+    "topics": [
+      "Cloud",
+      "Security",
+      "Resilience"
+    ],
+    "summary": "Community speaking engagement at the intersection of cloud, security, and resilient systems.",
+    "links": []
+  },
+  {
+    "id": "boise-state-teaching",
+    "title": "Adjunct Lecturer \u2014 Computer Science",
+    "organization": "Boise State University",
+    "topics": [
+      "Teaching",
+      "Mentorship",
+      "Computer Science"
+    ],
+    "summary": "Teaching and mentoring students with a practical, industry-grounded approach to computer science fundamentals.",
+    "links": []
+  }
+]

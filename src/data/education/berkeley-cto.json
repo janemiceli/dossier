@@ -1,0 +1,22 @@
+{
+  "id": "berkeley-cto",
+  "degree": "Berkeley CTO Program",
+  "institution": "UC Berkeley",
+  "location": "Berkeley, CA",
+  "duration": "Jan 2025 - Dec 2026",
+  "link": "https://executive.berkeley.edu/",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/UC_Berkeley_logo.svg",
+  "coursework": [
+    "Executive technology strategy",
+    "CTO leadership",
+    "Innovation and transformation",
+    "Business alignment",
+    "Organizational leadership"
+  ],
+  "skills": [
+    "Executive strategy",
+    "Technology leadership",
+    "Org design",
+    "Business alignment"
+  ]
+}

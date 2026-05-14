@@ -1,0 +1,45 @@
+{
+  "id": "micron",
+  "company": "Micron",
+  "role": "Cloud Enterprise Architect",
+  "period": "Feb 2018 \u2013 Dec 2019",
+  "location": "Boise, ID",
+  "tags": [
+    "Cloud",
+    "Architecture",
+    "Enterprise",
+    "Infrastructure"
+  ],
+  "metrics": [
+    {
+      "value": "Cloud",
+      "label": "Arch"
+    },
+    {
+      "value": "Enterprise",
+      "label": "Scope"
+    },
+    {
+      "value": "Scale",
+      "label": "Focus"
+    }
+  ],
+  "highlights": [
+    "Enterprise cloud architecture",
+    "Scalable infrastructure",
+    "Engineering enablement",
+    "Platform strategy"
+  ],
+  "technologies": [
+    "Cloud Architecture",
+    "Enterprise Architecture",
+    "Infrastructure",
+    "DevOps",
+    "Automation"
+  ],
+  "details": [
+    "Designed and led enterprise cloud architecture initiatives.",
+    "Enabled scalable infrastructure and engineering velocity.",
+    "Partnered with teams to define cloud patterns, platform direction, and implementation guidance."
+  ]
+}

@@ -1,35 +1,50 @@
 {
   "id": "touchnet",
-  "company": "TouchNet Information Systems (A Global Payments Company)",
-  "role": "Site Reliability Engineer",
-  "period": "May 2022 – Present",
-  "location": "Lenexa, KS (Remote)",
-  "tags": ["Cloud", "AI/ML", "SRE"],
+  "company": "TouchNet (Global Payments)",
+  "role": "Engineering Manager \u2014 SRE / Operations / Cloud Infrastructure",
+  "period": "Feb 2024 \u2013 Present",
+  "location": "Remote / Boise, ID",
+  "tags": [
+    "SRE",
+    "Cloud Infrastructure",
+    "Operations",
+    "Incident Management"
+  ],
   "metrics": [
-    { "value": "99.99%", "label": "Uptime" },
-    { "value": "$10k+",  "label": "Savings/mo" },
-    { "value": "50+",    "label": "Deployments" }
+    {
+      "value": "GCP",
+      "label": "Cloud"
+    },
+    {
+      "value": "24/7",
+      "label": "Ops"
+    },
+    {
+      "value": "SRE",
+      "label": "Practice"
+    }
   ],
   "highlights": [
-    "Cloud migration & AI/ML pipeline automation",
-    "Observability & SLO frameworks",
-    "ChatOps & CI/CD automation"
+    "Leading SRE/Ops/Cloud Infra",
+    "Driving reliability maturity",
+    "Improving incident practices",
+    "Enabling automation strategy"
   ],
   "technologies": [
-    "AWS", "GCP", "Python", "Vertex AI", "Kubeflow",
-    "Terraform", "Ansible", "Kubernetes", "ArgoCD",
-    "Azure DevOps", "GitHub Actions", "Jenkins"
+    "GCP",
+    "Terraform",
+    "Datadog",
+    "Splunk On-Call",
+    "Jira",
+    "Slack",
+    "Kubernetes",
+    "GitHub Actions"
   ],
   "details": [
-    "Led cloud migration using AWS Migration Hub & Google Data Transfer Service.",
-    "Deployed AI/ML workloads on Vertex AI and Kubeflow with automated pipelines.",
-    "Built GPU-based HPC clusters (NVIDIA DGX, GKE nodes, Cisco UCS).",
-    "Implemented observability with SLOs/SLIs, error budgets & real-time dashboards.",
-    "Automated infra using Python, Terraform, and Ansible to reduce manual toil.",
-    "Engineered fault-tolerant Kubernetes + GCP architectures for ML workloads.",
-    "Maintained CI/CD pipelines via Azure DevOps, GitHub Actions, and Jenkins.",
-    "Integrated ChatOps automation with Python and GCP Functions.",
-    "Designed ETL pipelines in Azure Data Factory for SQL, APIs & Blob Storage.",
-    "Drove cloud governance, cost optimization, and team enablement."
+    "Lead SRE, Operations, and Cloud Infrastructure teams supporting cloud platform reliability and operational execution.",
+    "Drive reliability, scalability, incident management, and cloud platform maturity across production-facing systems.",
+    "Improve operational excellence through clearer ownership, disciplined operating rhythms, and automation strategy.",
+    "Partner with engineering teams to reduce toil, improve observability, and strengthen incident response practices.",
+    "Translate reliability risk into business impact and actionable engineering priorities."
   ]
 }

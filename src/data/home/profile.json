@@ -1,89 +1,83 @@
 {
-  "name": "Akash Verma",
-  "tagline": "SRE & Cloud Architect",
-  "metaDescription": "Site Reliability Engineer & Cloud Architect",
-  "headerHandle": "akash-verma",
-  "footerName": "Akash Verma",
+  "name": "Jane Miceli",
+  "tagline": "Technology Leader | SRE, Ops & Cloud Infrastructure",
+  "metaDescription": "Jane Miceli \u2014 Technology leader focused on reliability, scalable operations, cloud infrastructure, SRE, DevOps, incident response, and engineering leadership.",
+  "headerHandle": "janemiceli",
+  "footerName": "Jane Miceli",
   "social": [
     {
       "platform": "github",
       "label": "GitHub",
-      "url": "https://github.com/akash-cloudtech",
+      "url": "https://github.com/janemiceli",
       "color": "text-black dark:text-white"
     },
     {
       "platform": "linkedin",
       "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/akashv01/",
+      "url": "https://www.linkedin.com/in/janemiceli",
       "color": "text-[#0077b5]"
-    },
-    {
-      "platform": "instagram",
-      "label": "Instagram",
-      "url": "https://www.instagram.com/akash.verma.dso/",
-      "color": "text-[#E1306C]"
     }
   ],
-  "roleTitle": "DevOps & SRE / Data & AI | Cloud Architect",
+  "roleTitle": "Engineering Manager \u2014 SRE / Ops / Cloud Infrastructure",
   "titleRoulette": [
-    "DevOps & SRE / Data & AI | Cloud Architect",
-    "YAML Wrangler & Kubernetes Whisperer",
-    "LLM Fine-Tuner & Prompt Engineer",
-    "Cloud Janitor & Infrastructure Mechanic",
-    "Production Firefighter & Chaos Engineer",
-    "RAG Pipeline Plumber",
-    "Identifying as Root"
+    "Engineering Manager \u2014 SRE / Ops / Cloud Infrastructure",
+    "Reliability Leader & Incident Response Strategist",
+    "Cloud Infrastructure & Operations Leader",
+    "People-First Engineering Manager",
+    "Error Budget Whisperer",
+    "Production Firefighter, But With Process",
+    "CTO-Track Technology Leader"
   ],
-  "bio": "Bridging the gap between infrastructure, data, and machine learning. I architect scalable cloud platforms, automate resilient DevOps pipelines, and optimize high performance computing systems for next generation AI workloads.",
-  "email": "averma7304@gmail.com",
+  "bio": "Technology leader focused on reliability, scalable operations, and building high-trust teams. I align platform investments to business outcomes, reduce operational risk, and improve delivery velocity through disciplined operating rhythms, automation, and clear accountability.",
+  "email": "jane+github@janemiceli.com",
   "resumeUrl": "/resumes/resume.pdf",
   "cta": {
-    "heading": "Ready to Scale?",
-    "body": "Whether it's optimizing Kubernetes clusters, building ML pipelines, or automating your entire infrastructure, let's build something resilient together.",
+    "heading": "Ready to Build Resilient Systems?",
+    "body": "Whether it is improving reliability, reducing toil, or building high-trust teams that handle incidents well, let\u2019s build something resilient together.",
     "buttonLabel": "Let's Talk"
   },
   "stats": [
     {
-      "value": "10+",
-      "label": "Years Experience",
+      "value": "20+",
+      "label": "Years in Tech",
       "gif": "https://media.giphy.com/media/NTur7XlVDUdqM/giphy.gif",
       "gifAlt": "This is fine",
-      "caption": "Me in production, 10 years ago."
+      "caption": "Calmly managing production reality since 2002."
     },
     {
-      "value": "3",
-      "label": "Cloud Platforms",
-      "gif": "https://media.giphy.com/media/26tn33aiUhaTTb81W/giphy.gif",
-      "gifAlt": "Cloud Battle",
-      "captionHTML": "<span class=\"font-bold text-orange-500 dark:text-orange-400\">AWS</span> <span class=\"text-slate-500 mx-1\">vs</span> <span class=\"font-bold text-blue-500 dark:text-blue-400\">Azure</span> <span class=\"text-slate-500 mx-1\">vs</span> <span class=\"font-bold text-yellow-500 dark:text-yellow-400\">GCP</span>"
-    },
-    {
-      "value": "500+",
-      "label": "Compute Managed",
-      "gif": "https://media.giphy.com/media/uVOTxMagGsgXS/giphy.gif",
-      "gifAlt": "Hamster Wheel",
-      "caption": "Running on full capacity!"
-    },
-    {
-      "value": "100+",
-      "label": "Microservices",
+      "value": "SRE",
+      "label": "Reliability Leadership",
       "gif": "https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif",
       "gifAlt": "Debugging",
-      "caption": "Fix one bug, spawn two more."
+      "caption": "Blameless, fast, and focused on learning."
     },
     {
-      "value": "99.99%",
-      "label": "Target Uptime",
+      "value": "GCP",
+      "label": "Cloud Infra",
+      "gif": "https://media.giphy.com/media/26tn33aiUhaTTb81W/giphy.gif",
+      "gifAlt": "Cloud battle",
+      "caption": "Cloud foundations, platform maturity, and scalable operations."
+    },
+    {
+      "value": "2025\u201326",
+      "label": "Berkeley CTO",
       "gif": "https://media.giphy.com/media/LRVnPYqM8DLag/giphy.gif",
       "gifAlt": "Sweating",
-      "caption": "0.01% Error Budget remaining..."
+      "caption": "Executive strategy meets technical leadership."
     },
     {
-      "value": "∞",
-      "label": "Automated Tasks",
+      "value": "CS121",
+      "label": "Teaching",
+      "gif": "https://media.giphy.com/media/uVOTxMagGsgXS/giphy.gif",
+      "gifAlt": "Teaching",
+      "caption": "Bridging fundamentals with real-world engineering."
+    },
+    {
+      "value": "\u221e",
+      "label": "Toil Avoided",
       "gif": "https://media.giphy.com/media/urvsFBDfR6N32/giphy.gif",
       "gifAlt": "Robot",
-      "caption": "Destroying manual toil."
+      "caption": "Automate the boring. Measure the important."
     }
   ]
 }

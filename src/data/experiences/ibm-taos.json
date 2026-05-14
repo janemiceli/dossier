@@ -1,0 +1,46 @@
+{
+  "id": "ibm-taos",
+  "company": "IBM (formerly Taos Mountain Inc)",
+  "role": "Principal Engineer & Team Lead, DevOps Now",
+  "period": "Dec 2019 \u2013 Jan 2021",
+  "location": "Remote / Boise, ID",
+  "tags": [
+    "DevOps",
+    "SRE",
+    "Technical Leadership",
+    "Cloud"
+  ],
+  "metrics": [
+    {
+      "value": "Lead",
+      "label": "Role"
+    },
+    {
+      "value": "Cloud",
+      "label": "Focus"
+    },
+    {
+      "value": "DevOps",
+      "label": "Practice"
+    }
+  ],
+  "highlights": [
+    "Principal engineering leadership",
+    "DevOps/SRE initiatives",
+    "Cloud modernization",
+    "Technical strategy"
+  ],
+  "technologies": [
+    "DevOps",
+    "SRE",
+    "Cloud",
+    "Automation",
+    "Infrastructure",
+    "Consulting"
+  ],
+  "details": [
+    "Led DevOps and SRE initiatives as a principal engineer and technical leader.",
+    "Guided cloud modernization and infrastructure strategy engagements.",
+    "Enabled teams through technical coaching, delivery leadership, and operational best practices."
+  ]
+}

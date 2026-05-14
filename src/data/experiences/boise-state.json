@@ -1,0 +1,46 @@
+{
+  "id": "boise-state",
+  "company": "Boise State University",
+  "role": "Adjunct Lecturer \u2014 Computer Science",
+  "period": "2023 \u2013 Present",
+  "location": "Boise, ID",
+  "tags": [
+    "Teaching",
+    "Computer Science",
+    "Mentorship",
+    "CS121"
+  ],
+  "metrics": [
+    {
+      "value": "CS121",
+      "label": "Course"
+    },
+    {
+      "value": "BSU",
+      "label": "Institution"
+    },
+    {
+      "value": "Mentor",
+      "label": "Role"
+    }
+  ],
+  "highlights": [
+    "Teaching CS121",
+    "Mentoring students",
+    "Connecting theory to practice",
+    "Bringing industry context"
+  ],
+  "technologies": [
+    "Computer Science fundamentals",
+    "Software Engineering",
+    "Python",
+    "Teaching",
+    "Mentorship"
+  ],
+  "details": [
+    "Teach Computer Science courses including CS121.",
+    "Mentor students in software engineering fundamentals, problem solving, and technical confidence.",
+    "Bridge academic learning with real-world engineering, reliability, and operations practices.",
+    "Support students through feedback, coaching, and applied examples from industry."
+  ]
+}
