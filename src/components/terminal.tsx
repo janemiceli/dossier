@@ -1,4 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import { PROFILE } from "@/data/profile";
+import { ROLES } from "@/data/experience";
+import { SKILL_GROUPS } from "@/data/skills";
 
 type Line = { kind: "prompt" | "out" | "banner" | "warn"; text: string };
 
@@ -16,10 +19,15 @@ const HELP = [
   "  whoami       — who is behind this terminal",
   "  experience   — jump to work history",
   "  skills       — list technical skill inventory",
+  "  git          — show git graph summary",
   "  contact      — how to reach me",
   "  sudo hire    — the fast path",
   "  clear        — clear the screen",
 ];
+
+function pad(str: string, len: number) {
+  return str.length >= len ? str : str + " ".repeat(len - str.length);
+}
 
 function runCommand(cmd: string): Line[] {
   const c = cmd.trim().toLowerCase();
@@ -27,17 +35,30 @@ function runCommand(cmd: string): Line[] {
   if (c === "help") return HELP.map((text) => ({ kind: "out" as const, text }));
   if (c === "whoami")
     return [
-      { kind: "out", text: "jane — Director of Production Engineering @ Global Payments" },
+      { kind: "out", text: `jane — ${PROFILE.shortRole}` },
       { kind: "out", text: "roles: engineering leader • sre • devops • agile coach" },
       { kind: "out", text: "mode:  always learning, always solving" },
     ];
   if (c === "experience")
-    return [{ kind: "out", text: "→ opening ./experience" }];
-  if (c === "skills") return [{ kind: "out", text: "→ opening ./skills" }];
+    return [
+      ...ROLES.map((r) => ({
+        kind: "out" as const,
+        text: `${pad(r.shortPeriod, 11)}${pad(r.shortCompany, 23)}${r.shortTitle}`,
+      })),
+      { kind: "out", text: "→ full timeline at ./experience" },
+    ];
+  if (c === "skills")
+    return [
+      ...SKILL_GROUPS.map((g) => ({
+        kind: "out" as const,
+        text: `${g.terminalKey} → ${g.terminalBlurb}`,
+      })),
+      { kind: "out", text: "→ full inventory at ./skills" },
+    ];
   if (c === "contact")
     return [
-      { kind: "out", text: "email:    jane+github@janemiceli.com" },
-      { kind: "out", text: "linkedin: linkedin.com/in/janemiceli" },
+      { kind: "out", text: `email:    ${PROFILE.email}` },
+      { kind: "out", text: `linkedin: ${PROFILE.socials.linkedin.replace(/^https?:\/\//, "")}` },
     ];
   if (c === "sudo hire")
     return [
@@ -45,14 +66,20 @@ function runCommand(cmd: string): Line[] {
       { kind: "out", text: "Access granted. Redirecting to inbox…" },
     ];
   if (c === "ls")
-    return [{ kind: "out", text: "experience  education  certifications  projects  skills" }];
+    return [{ kind: "out", text: "experience  education  certifications  projects  skills  git" }];
+  if (c === "git")
+    return [
+      { kind: "out", text: "On branch main" },
+      { kind: "out", text: "Your branch is ahead of 'origin/main' by 1 commit." },
+      { kind: "out", text: "→ view graph at ./git" },
+    ];
   if (c === "clear") return [];
   return [{ kind: "warn", text: `command not found: ${cmd} — type 'help'` }];
 }
 
 const INITIAL: Line[] = [
   { kind: "banner", text: BANNER },
-  { kind: "out", text: "Welcome to Jane Miceli's interactive portfolio." },
+  { kind: "out", text: `Welcome to ${PROFILE.name}'s interactive portfolio.` },
   { kind: "out", text: "Type 'help' to see available commands." },
 ];
 

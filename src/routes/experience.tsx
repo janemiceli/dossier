@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader, PageShell } from "@/components/page-shell";
 import { ExternalLink } from "lucide-react";
+import { ROLES } from "@/data/experience";
 
 export const Route = createFileRoute("/experience")({
   head: () => ({
@@ -14,100 +15,6 @@ export const Route = createFileRoute("/experience")({
   component: ExperiencePage,
 });
 
-type Role = {
-  title: string;
-  company: string;
-  period: string;
-  url?: string;
-  tags: string[];
-  summary?: string;
-  current?: boolean;
-};
-
-const ROLES: Role[] = [
-  {
-    title: "Manager of Cloud Infra, Ops and Reliability Engineering",
-    company: "Global Payments",
-    period: "Present",
-    url: "https://www.globalpayments.com",
-    current: true,
-    tags: ["Leadership", "Cloud Infrastructure", "Operations", "Reliability Engineering"],
-    summary:
-      "Leading cloud infrastructure, operations, and reliability engineering — building resilient platforms and the empowered teams that run them.",
-  },
-  {
-    title: "Senior Manager, Site Reliability Engineering",
-    company: "Kohl's",
-    period: "Jan 2021 – Jul 2023",
-    url: "https://www.kohls.com",
-    tags: ["SRE", "Retail Scale", "People Leadership"],
-    summary:
-      "Grew and led SRE at retail scale — reliability, on-call health, and platform practice.",
-  },
-  {
-    title: "Principal Engineer & Team Lead, DevOps Now",
-    company: "IBM (formerly Taos Mountain Inc)",
-    period: "Dec 2019 – Jan 2021",
-    url: "https://www.ibm.com",
-    tags: ["DevOps", "Consulting", "Platform"],
-  },
-  {
-    title: "Cloud Enterprise Architect",
-    company: "Micron",
-    period: "Feb 2018 – Dec 2019",
-    url: "https://www.micron.com",
-    tags: ["Cloud Architecture", "Enterprise"],
-  },
-  {
-    title: "Lead, Senior Site Reliability Engineer",
-    company: "HP Inc (formerly Hewlett-Packard)",
-    period: "Nov 2014 – Feb 2018",
-    url: "https://www.hp.com",
-    tags: ["SRE", "Reliability", "Automation"],
-  },
-  {
-    title: "Software Development Engineer",
-    company: "Xylem (formerly Sensus)",
-    period: "Sep 2013 – Nov 2014",
-    url: "https://www.xylem.com/en-us/",
-    tags: ["Software Engineering"],
-  },
-  {
-    title: "Software Engineer",
-    company: "EdPower (formerly Silverback Learning Solutions)",
-    period: "Jan 2012 – Sep 2013",
-    url: "https://www.myedpower.com",
-    tags: ["Software Engineering", "EdTech"],
-  },
-  {
-    title: "Software Engineer II/III",
-    company: "Adecco (assigned to Hewlett-Packard)",
-    period: "Mar 2010 – Dec 2011",
-    url: "https://www.hp.com",
-    tags: ["Software Engineering"],
-  },
-  {
-    title: "Quality Assurance Engineer",
-    company: "Bodybuilding.com",
-    period: "Oct 2008 – Mar 2010",
-    url: "https://www.bodybuilding.com",
-    tags: ["QA", "Web Scale"],
-  },
-  {
-    title: "Firmware Design Engineer",
-    company: "Hewlett-Packard",
-    period: "Jun 2007 – Oct 2008",
-    url: "https://www.hp.com",
-    tags: ["Firmware", "Embedded"],
-  },
-  {
-    title: "Software Test Engineer",
-    company: "Rockwell Automation (formerly Rockwell Software)",
-    period: "Mar 2002 – Jun 2007",
-    url: "https://www.rockwellautomation.com",
-    tags: ["Automation", "Testing"],
-  },
-];
 
 function ExperiencePage() {
   return (

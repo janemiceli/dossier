@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { AlertTriangle, ArrowRight, FileText, Mail } from "lucide-react";
+import { AlertTriangle, ArrowRight, Linkedin, Mail } from "lucide-react";
 import { PageShell } from "@/components/page-shell";
 import { Terminal } from "@/components/terminal";
+import { PROFILE } from "@/data/profile";
+import { STATS } from "@/data/stats";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -30,14 +32,6 @@ function ProdOverlay({ onClose }: { onClose: () => void }) {
   );
 }
 
-const STATS = [
-  { value: "20+", label: "Years in tech", note: "Since 2002 — before DevOps was a word." },
-  { value: "10+", label: "Companies", note: "Kohl's, IBM, Micron, HP, Global Payments…" },
-  { value: "100s", label: "Engineers led", note: "People-first, always." },
-  { value: "∞", label: "Post-mortems", note: "Blameless, with teeth." },
-  { value: "99.99%", label: "Uptime target", note: "0.01% error budget, gone by Tuesday." },
-  { value: "0", label: "Blame given", note: "Systems thinking > finger pointing." },
-];
 
 function Home() {
   const [showProd, setShowProd] = useState(false);
@@ -62,17 +56,13 @@ function Home() {
         <div>
           <p className="font-mono text-sm text-primary">$ whoami</p>
           <h1 className="mt-3 text-5xl font-bold tracking-tight text-foreground md:text-6xl">
-            Hi, I&apos;m <span className="text-primary">Jane Miceli</span>
+            Hi, I&apos;m <span className="text-primary">{PROFILE.name}</span>
           </h1>
           <p className="mt-5 font-mono text-lg text-muted-foreground">
-            Manager of Cloud Infra, Ops and Reliability Engineering{" "}
-            <span className="text-primary">|</span> Engineering Leader
+            {PROFILE.role} <span className="text-primary">|</span> {PROFILE.tagline}
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-foreground/80">
-            I&apos;m an engineering leader who is always learning and solving
-            problems — building resilient production systems and the empowered
-            teams that run them. People-first leadership, blameless
-            post-mortems, and a healthy respect for the error budget.
+            {PROFILE.bio}
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -83,20 +73,23 @@ function Home() {
               View Experience <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href="https://www.linkedin.com/in/janemiceli"
+              href={PROFILE.socials.linkedin}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-md border border-primary/30 bg-background px-5 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-accent"
             >
-              <FileText className="h-4 w-4" /> LinkedIn
+              <Linkedin className="h-4 w-4" /> LinkedIn
             </a>
             <a
-              href="mailto:jane+github@janemiceli.com"
+              href={`mailto:${PROFILE.email}?subject=Hello%20Jane`}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-2.5 text-sm font-semibold text-background transition-colors hover:opacity-90"
             >
               <Mail className="h-4 w-4" /> Contact Me
             </a>
           </div>
+
 
           <button
             type="button"
@@ -137,7 +130,9 @@ function Home() {
           practices, or coaching teams through change — let&apos;s talk.
         </p>
         <a
-          href="mailto:jane+github@janemiceli.com"
+          href={`mailto:${PROFILE.email}?subject=Let%27s%20Talk`}
+          target="_blank"
+          rel="noreferrer"
           className="mt-8 inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
         >
           Let&apos;s Talk <ArrowRight className="h-4 w-4" />

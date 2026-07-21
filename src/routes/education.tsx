@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader, PageShell } from "@/components/page-shell";
 import { GraduationCap, ExternalLink } from "lucide-react";
+import { DEGREES } from "@/data/education";
 
 export const Route = createFileRoute("/education")({
   head: () => ({
@@ -14,18 +15,6 @@ export const Route = createFileRoute("/education")({
   component: EducationPage,
 });
 
-const DEGREES = [
-  {
-    degree: "Master of Science",
-    school: "University of Wisconsin - Milwaukee",
-    url: "http://www.worldcat.org/oclc/288956579",
-  },
-  {
-    degree: "Bachelor of Science",
-    school: "University of Wisconsin - Milwaukee",
-    url: "http://www.uwm.edu",
-  },
-];
 
 function EducationPage() {
   return (

@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader, PageShell } from "@/components/page-shell";
+import { SKILL_GROUPS as GROUPS } from "@/data/skills";
 
 export const Route = createFileRoute("/skills")({
   head: () => ({
@@ -13,77 +14,6 @@ export const Route = createFileRoute("/skills")({
   component: SkillsPage,
 });
 
-const GROUPS: { title: string; items: string[] }[] = [
-  {
-    title: "Leadership",
-    items: [
-      "Servant Leadership",
-      "People-First Management",
-      "Team Building",
-      "Psychological Safety",
-      "Coaching & Mentorship",
-      "Org Design",
-      "Change Management",
-    ],
-  },
-  {
-    title: "Practice",
-    items: [
-      "Site Reliability Engineering",
-      "Production Engineering",
-      "DevOps",
-      "Incident Management",
-      "Blameless Post-Mortems",
-      "On-Call Health",
-      "SLO / SLI / Error Budgets",
-    ],
-  },
-  {
-    title: "Agile & Process",
-    items: [
-      "Scrum (CSM, ACSM, CSP)",
-      "SAFe",
-      "Kanban",
-      "Certified Agile Leadership",
-      "Product Ownership (CSPO)",
-      "Facilitation",
-    ],
-  },
-  {
-    title: "Architecture & Cloud",
-    items: [
-      "Cloud Enterprise Architecture",
-      "AWS",
-      "Azure",
-      "GCP",
-      "Kubernetes",
-      "Microservices",
-      "Platform Engineering",
-    ],
-  },
-  {
-    title: "Engineering",
-    items: [
-      "Software Engineering",
-      "Firmware / Embedded",
-      "Automation",
-      "CI/CD",
-      "Observability",
-      "Testing & QA",
-    ],
-  },
-  {
-    title: "Domain",
-    items: [
-      "Payments",
-      "Retail Scale",
-      "Enterprise IT",
-      "Consulting",
-      "EdTech",
-      "Industrial Automation",
-    ],
-  },
-];
 
 function SkillsPage() {
   return (
