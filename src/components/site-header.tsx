@@ -2,8 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Moon, Sun, Menu, X, FileText } from "lucide-react";
 import { NAV } from "@/data/navigation";
-import { PROFILE } from "@/data/profile";
-import resumeAsset from "@/assets/resume.pdf.asset.json";
+import { PROFILE, RESUME_URL } from "@/data/profile";
 
 
 export function SiteHeader() {
@@ -47,7 +46,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-2">
           <a
-            href={resumeAsset.url}
+            href={RESUME_URL}
             target="_blank"
             rel="noreferrer"
             download="Jane-Miceli-Resume.pdf"
