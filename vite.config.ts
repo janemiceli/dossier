@@ -26,15 +26,7 @@ export default defineConfig({
         }
       : undefined,
   },
-  nitro: isGitHubPages
-    ? {
-        output: {
-          dir: "dist",
-          serverDir: "dist/server",
-          publicDir: "dist/client",
-        },
-      }
-    : undefined,
+  nitro: isGitHubPages ? false : undefined,
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
