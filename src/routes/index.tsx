@@ -59,7 +59,7 @@ function Home() {
             Hi, I&apos;m <span className="text-primary">{PROFILE.name}</span>
           </h1>
           <p className="mt-5 font-mono text-lg text-muted-foreground">
-            {PROFILE.role} <span className="text-primary">|</span> {PROFILE.tagline}
+            {PROFILE.shortRole} <span className="text-primary">|</span> {PROFILE.tagline}
           </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-foreground/80">
             {PROFILE.bio}

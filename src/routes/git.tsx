@@ -6,7 +6,8 @@ export const Route = createFileRoute("/git")({
   component: GitPage,
 });
 
-const SVG_URL = "https://11468369-9fce-4c12-8342-1ef782238f7b.lovableproject.com/api/public/embed/jane.svg";
+const SVG_URL = "https://engineerimpact.com/api/public/embed/t/ec0616d8c0ee06c97e75ea5a70560808373b0d86e02601a8.svg";
+
 
 function GitPage() {
   return (

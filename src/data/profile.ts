@@ -5,7 +5,7 @@ export const PROFILE = {
   name: "Jane Miceli",
   handle: "jane-miceli",
   role: "Manager of Cloud Infra, Ops and Reliability Engineering",
-  shortRole: "Director of Production Engineering",
+  shortRole: "Director of Cloud Platform",
   tagline: "Engineering Leader",
   bio:
     "I'm an engineering leader who is always learning and solving problems — building resilient production systems and the empowered teams that run them. People-first leadership, blameless post-mortems, and a healthy respect for the error budget.",
