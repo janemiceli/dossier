@@ -1,14 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Github, Linkedin, Moon, Sun, Menu, X } from "lucide-react";
+import { Github, Linkedin, Moon, Sun, Menu, X, FileText } from "lucide-react";
+import { NAV } from "@/data/navigation";
+import { PROFILE } from "@/data/profile";
+import resumeAsset from "@/assets/resume.pdf.asset.json";
 
-const NAV = [
-  { to: "/experience", label: "./experience" },
-  { to: "/education", label: "./education" },
-  { to: "/certifications", label: "./certifications" },
-  { to: "/projects", label: "./projects" },
-  { to: "/skills", label: "./skills" },
-] as const;
 
 export function SiteHeader() {
   const [dark, setDark] = useState(false);
@@ -33,7 +29,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur">
       <div className="container-app flex h-16 items-center justify-between">
         <Link to="/" className="font-mono text-base font-semibold text-primary">
-          <span className="text-muted-foreground">~/</span>jane-miceli
+          <span className="text-muted-foreground">~/</span>{PROFILE.handle}
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -51,7 +47,16 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://github.com/janemiceli"
+            href={resumeAsset.url}
+            target="_blank"
+            rel="noreferrer"
+            download="Jane-Miceli-Resume.pdf"
+            className="hidden items-center gap-1.5 rounded-md border border-primary/30 bg-primary/5 px-3 py-1.5 font-mono text-xs font-semibold text-primary transition-colors hover:bg-primary/10 sm:inline-flex"
+          >
+            <FileText className="h-3.5 w-3.5" /> Resume
+          </a>
+          <a
+            href={PROFILE.socials.github}
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
@@ -60,7 +65,7 @@ export function SiteHeader() {
             <Github className="h-4 w-4" />
           </a>
           <a
-            href="https://www.linkedin.com/in/janemiceli"
+            href={PROFILE.socials.linkedin}
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
