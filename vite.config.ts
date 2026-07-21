@@ -11,6 +11,20 @@ const isGitHubPages = process.env.GITHUB_PAGES === "true";
 export default defineConfig({
   vite: {
     base: isGitHubPages ? "/dossier/" : "/",
+    environments: isGitHubPages
+      ? {
+          client: {
+            build: {
+              outDir: "dist/client",
+            },
+          },
+          ssr: {
+            build: {
+              outDir: "dist/server",
+            },
+          },
+        }
+      : undefined,
   },
   nitro: isGitHubPages
     ? {
