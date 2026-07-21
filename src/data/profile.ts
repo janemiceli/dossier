@@ -15,3 +15,5 @@ export const PROFILE = {
     linkedin: "https://www.linkedin.com/in/janemiceli",
   },
 } as const;
+
+export const RESUME_URL = `${import.meta.env.BASE_URL}Jane-Miceli-Resume.pdf`;
